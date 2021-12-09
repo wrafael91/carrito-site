@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #fc0380;
+    background-color: #fc7303;
 }
 
 #logo-image {
@@ -39,6 +39,12 @@ nav ul li a {
     font-family: sans-serif;
 }
 
+#shopping-cart {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
 a {
     text-decoration: none;
 }
@@ -52,13 +58,14 @@ a {
 
 .banner {
     position: relative;
-    min-height: 100vh;
+    min-height: 60vh;
     background: url(../img/shoes.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px;
 }
 
 .banner .text-box {
@@ -67,5 +74,47 @@ a {
     line-height: 1.5em;
     color:#fff;
     background: #4a4a4a;
+    margin-top: 400px;
+    padding: 20px 20px;
+    border-radius: 5px;
 }
 
+.banner .text-box h2 {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #fc7303;
+    color: #fff;
+    margin-top: 10px;
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #fc4a03;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
