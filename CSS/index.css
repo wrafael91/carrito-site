@@ -98,23 +98,40 @@ a {
     background: #fc4a03;
 }
 
-.categories {
-    margin: 70px 0;
-}
-
-.col-3 {
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-
-.col-3 img {
-    width: 100%;
-}
-
 .small-container {
     max-width: 1080px;
-    margin: auto;
+    margin: 50px auto;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.small-container .title {
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 60px;
+}
+
+.title::after {
+    content: "";
+    background: #fc7303;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sport-shoes-row {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+#product-1 {
+    margin-top: 20px;
+    width: 100%;
 }
