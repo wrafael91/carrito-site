@@ -129,9 +129,64 @@ a {
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
+    transition: transform 0.5s;
 }
 
 #product-1 {
     margin-top: 20px;
     width: 100%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#product-1:hover {
+    transform: translateY(-5px);
+}
+
+#menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*---- Media query for Menu Icon 800px ----*/
+
+@media only screen and (max-width: 800px) {
+    nav {
+        z-index: 999;
+    }
+    nav ul {
+        position: absolute;
+        top: 107px;
+        right: 0;
+        background: #333;
+        width: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*--- Media query for less than 600px ---*/
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .banner .text-box {
+        flex-basis: 100%;
+    }
 }

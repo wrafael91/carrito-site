@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/index.css"/>
@@ -16,7 +17,7 @@
           <img src="../img/logo_blue_ridge.png" id="logo-image">
         </div>
         <nav>
-          <ul>
+          <ul id="MenuItems">
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About Us</a></li>
@@ -24,6 +25,7 @@
           </ul>
         </nav>
         <img src="../img/shopping-cart.png" id="shopping-cart">
+        <img src="../img/menu.png" id="menu-icon" alt="menu icon" onclick="menutoggle()">
       </div>
       <div class="banner">
         <div class="text-box">
@@ -53,7 +55,34 @@
         <h3>Orange Shoes</h3>
         <p>$50.00</p>
       </div>
+      <div class="sport-shoes-row">
+        <img src="../img/pink-blue shoes.jpg" alt="blue and white shoes" id="product-1">
+        <h3>Pink-Blue Shoes</h3>
+        <p>$50.00</p>
+      </div>
+      <div class="sport-shoes-row">
+        <img src="../img/white-blue shoes.jpg" alt="blue and white shoes" id="product-1">
+        <h3>White-Blue Shoes</h3>
+        <p>$50.00</p>
+      </div>
+      <div class="sport-shoes-row">
+        <img src="../img/white-red shoes.jpg" alt="blue and white shoes" id="product-1">
+        <h3>White-Red Shoes</h3>
+        <p>$50.00</p>
+      </div>
     </div>
   </div>
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if(MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+      } else {
+          MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
 </body>
 </html>
